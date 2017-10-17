@@ -1,0 +1,58 @@
+/* Common definitions */
+body{font-family: Arial;}
+*{box-sizing: border-box;}
+#container{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+/* Definitions for tab menu */
+#tab-menu{position: relative;}
+#tab-menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#tab-menu li{
+    display: inline-block;
+    padding: 5px 15px 5px 15px;
+    float: left;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#tab-menu a{
+    font-weight: bold;
+    color: #868686;
+    text-decoration: none;
+    transition: 0.5s;
+}
+#tab-menu a:hover{
+    color: #4a4a4a;
+    text-decoration: none;
+}
+
+/* Definitions for tabs contents */
+.tab div[id*="tab-content"]{
+    display: none;
+    width: 400px;
+    height: 200px;
+    margin: 28px 0 0 0;
+    padding: 0px 10px;
+    text-align: justify;
+    box-shadow: 5px 5px 5px #CCCCCC;
+    clear: both;
+    position: absolute;
+}
+.tab div[id*="tab-content"]:target{display: block;}
+
+/* Tab 1 */
+#tab-content-1{display: block;}
+#tab1, #tab-content-1{background: #fff2b5;}
+
+/* Tab 2 */
+#tab2, #tab-content-2{background: #c7efc4;}
+
+/* Tab 3 */
+#tab3, #tab-content-3{background: #e1d7ed}
