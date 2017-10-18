@@ -31,5 +31,6 @@ body{font-family: Arial;}
 #dropdown-content li a{color: #868686;text-decoration: none;transition: 0.3s;}
 #dropdown-content li a:hover{color: #111111;text-decoration: none;}
 
+/* When button hover */
 #dropdown:hover #dropdown-bt{background: #a7b6df;cursor: pointer;}
 #dropdown:hover #dropdown-content{visibility: visible;}
