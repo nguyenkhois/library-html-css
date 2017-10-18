@@ -1,0 +1,35 @@
+/* Common definitions */
+*{box-sizing: border-box;}
+body{font-family: Arial;}
+
+#dropdown{position: relative;display: inline-block;}
+#dropdown-bt{
+    background: #c7d4ff;
+    padding: 10px;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+}
+
+#dropdown-content{
+    list-style-type: none;
+    margin: 0;
+    padding: 35px 0 0 0;
+    width: 100%;
+    position: absolute;
+    visibility: hidden;
+    z-index: 1;
+}
+#dropdown-content li{
+    width: 200px;
+    background: #efefef;
+    padding: 10px;
+    box-shadow: 5px 5px 5px #CCCCCC;
+}
+#dropdown-content li:hover{background: #d0d0d0;cursor: pointer;}
+#dropdown-content li a{color: #868686;text-decoration: none;transition: 0.3s;}
+#dropdown-content li a:hover{color: #111111;text-decoration: none;}
+
+#dropdown:hover #dropdown-bt{background: #a7b6df;cursor: pointer;}
+#dropdown:hover #dropdown-content{visibility: visible;}
