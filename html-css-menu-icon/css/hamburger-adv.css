@@ -44,10 +44,7 @@ body{font-family: Arial;}
 
     /* Definitions for menu*/
     #menu:hover #menu-content{visibility: visible;}
-    #menu:hover .three-lines{
-        background: #868686;
-        margin: 0;
-        padding: 0;
+    #menu:hover .three-lines{background: #868686;margin: 0;padding: 0;
     }
     #menu:hover #three-lines-1{transform: rotate(90deg);}
     #menu:hover #three-lines-3{visibility: hidden;}
