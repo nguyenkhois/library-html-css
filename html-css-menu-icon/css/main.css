@@ -1,0 +1,49 @@
+body{font-family: Arial;}
+*{box-sizing: border-box;}
+
+/* Definitions for menu */
+#menu{position: relative;}
+
+/* Definitions for menu button */
+#menu-bt{
+    background: #c7d4ff;
+    margin: 0;
+    padding: 10px;
+    border: 0;
+    position: relative;
+    z-index: 1;
+    visibility: hidden;
+}
+#menu-bt:hover{cursor: pointer;background: #a7b6df;}
+
+/* Definitions for menu content */
+#menu-content{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+/* Definitions for menu items */
+.menu-items{
+    margin: 0;
+    padding: 10px;
+    background: #efefef;
+    float: left;
+}
+.menu-items:hover{background: #d0d0d0;cursor: pointer;}
+.menu-items a{color: #868686;text-decoration: none;}
+.menu-items a:hover{color: #111111;text-decoration: underline;}
+
+/* Using for mobile devices */
+@media screen and (max-width: 768px){
+    /* Definitions for menu */
+    #menu{display: inline-block;}
+
+    /* Definitions for menu button */
+    #menu-bt{visibility: visible;}
+    #menu:hover #menu-content{visibility: visible;}
+
+    /* Definitions for menu content */
+    #menu-content{visibility: hidden;}
+}

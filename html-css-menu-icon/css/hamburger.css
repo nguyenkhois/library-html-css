@@ -1,0 +1,48 @@
+body{font-family: Arial;}
+*{box-sizing: border-box;}
+
+/* Definitions for menu */
+#menu{position: relative; cursor: pointer}
+
+/* Definitions for menu content */
+#menu-content{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+/* Definitions for three lines menu */
+.three-lines{
+    background: #111111;
+    width: 20px;
+    height: 2px;
+    margin: 4px ;
+    visibility: hidden;
+}
+
+/* Definitions for menu items */
+.menu-items{
+    margin: 0;
+    padding: 10px;
+    background: #efefef;
+    float: left;
+}
+.menu-items:hover{background: #d0d0d0;cursor: pointer;}
+.menu-items a{color: #868686;text-decoration: none;}
+.menu-items a:hover{color: #111111;text-decoration: underline;}
+
+/* Using for mobile devices */
+@media screen and (max-width: 768px){
+    /* Definitions for menu */
+    #menu{display: inline-block;}
+
+    /* Definitions for menu*/
+    #menu:hover #menu-content{visibility: visible;}
+
+    /* Definitions for menu content */
+    #menu-content{visibility: hidden;}
+
+    /* Definitions for three lines icons */
+    .three-lines{visibility: visible;}
+}
