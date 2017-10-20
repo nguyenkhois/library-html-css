@@ -2,7 +2,7 @@
 body{font-family: Arial;}
 *{box-sizing: border-box;}
 
-#tab-menu{display: flex;flex-direction: column;width: 400px;}
+#tab-menu{display: flex;flex-direction: column;}
 
 /* Definitions for tab menu */
 #tab-contents{position: relative;}
